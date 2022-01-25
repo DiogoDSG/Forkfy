@@ -11,11 +11,6 @@ class ResultsView extends View {
   _generateMarkup() {
     return this._data.map(result => previewView.render(result, false)).join('');
   }
-  // <div class="preview__user-generated">
-  //         <svg>
-  //           <use href="${icons}#icon-user"></use>
-  //         </svg>
-  //       </div>
 }
 
 export default new ResultsView();
